@@ -64,6 +64,7 @@ class NewMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
             movie.movieDesc = movieDesc.text
             movie.link = movieLink.text
             movie.setMovieImg(movieImg.image!)
+            movie.synopsis = moviePlot.text
             
             context.insertObject(movie)
             

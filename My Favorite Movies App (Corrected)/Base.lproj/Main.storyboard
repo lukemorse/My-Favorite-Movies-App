@@ -243,19 +243,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="dUl-tA-t0h">
                                 <rect key="frame" x="188" y="78" width="64" height="158"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hb-Y4-St1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="6Hb-Y4-St1">
                                         <rect key="frame" x="0.0" y="0.0" width="64" height="31"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkm-2S-HhD">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="lkm-2S-HhD">
                                         <rect key="frame" x="0.0" y="71" width="64" height="27"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlR-by-onT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xlR-by-onT">
                                         <rect key="frame" x="0.0" y="138" width="64" height="20"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -270,8 +270,9 @@
                                     <constraint firstAttribute="height" constant="263" id="rI6-Bi-Kvw"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFS-Y6-9mV">
-                                <rect key="frame" x="20" y="335" width="560" height="159"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFS-Y6-9mV">
+                                <rect key="frame" x="20" y="335" width="560" height="228"/>
+                                <string key="text">The man-cub Mowgli flees the jungle after a threat from the tiger Shere Khan. Guided by Bagheera the panther and the bear Baloo, Mowgli embarks on a journey of self-discovery, though he also meets creatures who don't have his best interests at heart.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -279,9 +280,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="leading" secondItem="A9S-bL-uMc" secondAttribute="leadingMargin" id="2bh-Xo-Hnt"/>
                             <constraint firstItem="QjZ-5k-EoN" firstAttribute="leading" secondItem="A9S-bL-uMc" secondAttribute="leadingMargin" constant="-20" id="6cc-t6-nyk"/>
                             <constraint firstItem="dUl-tA-t0h" firstAttribute="leading" secondItem="QjZ-5k-EoN" secondAttribute="trailing" constant="21" id="9DV-S8-4HC"/>
-                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="top" secondItem="QjZ-5k-EoN" secondAttribute="bottom" constant="8" id="sdV-5g-wfT"/>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="trailing" secondItem="A9S-bL-uMc" secondAttribute="trailingMargin" id="C8v-ui-ulX"/>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="top" secondItem="QjZ-5k-EoN" secondAttribute="bottom" constant="8" id="UXD-r4-hqw"/>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="centerY" secondItem="QjZ-5k-EoN" secondAttribute="centerY" constant="150" id="iEI-I9-6dX"/>
                             <constraint firstItem="QjZ-5k-EoN" firstAttribute="top" secondItem="xEO-TE-81z" secondAttribute="bottom" id="zDK-e6-k6I"/>
                         </constraints>
                     </view>
