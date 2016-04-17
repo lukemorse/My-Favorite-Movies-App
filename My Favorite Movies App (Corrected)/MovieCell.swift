@@ -25,6 +25,9 @@ class MovieCell: UITableViewCell {
         movieImg.image = movie.getMovieImg()
         movieDesc.text = movie.movieDesc
         movieLink.text = movie.link
+        
+        movieImg.layer.cornerRadius = 10.0
+        movieImg.clipsToBounds = true
     }
     
     

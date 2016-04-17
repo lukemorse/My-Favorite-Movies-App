@@ -147,23 +147,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter movie description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvT-Dx-CGs">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter movie description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvT-Dx-CGs">
                                 <rect key="frame" x="20" y="221" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter movie IMDB URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcL-PF-c9H">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter movie IMDB URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcL-PF-c9H">
                                 <rect key="frame" x="20" y="270" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ADD A MOVIE!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epH-ce-DfI">
-                                <rect key="frame" x="20" y="72" width="560" height="91"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD A MOVIE!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epH-ce-DfI">
+                                <rect key="frame" x="190" y="72" width="220" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter movie synopsis" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mt0-5E-mqi">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter movie synopsis" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mt0-5E-mqi">
                                 <rect key="frame" x="20" y="321" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -199,17 +199,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="epH-ce-DfI" firstAttribute="centerX" secondItem="s0S-p6-4cc" secondAttribute="centerX" id="12F-Xu-R5t"/>
+                            <constraint firstItem="gcL-PF-c9H" firstAttribute="top" secondItem="dvT-Dx-CGs" secondAttribute="bottom" constant="19" id="3yh-l8-2so"/>
                             <constraint firstItem="TIB-BF-ABJ" firstAttribute="top" secondItem="DL1-xB-KeJ" secondAttribute="bottom" constant="107" id="6gJ-hd-oP9"/>
+                            <constraint firstItem="Mt0-5E-mqi" firstAttribute="top" secondItem="gcL-PF-c9H" secondAttribute="bottom" constant="21" id="8Nb-b3-S2s"/>
                             <constraint firstItem="O13-R5-Vwc" firstAttribute="top" secondItem="Erg-3M-5C5" secondAttribute="bottom" constant="20" id="9sN-uw-Ujj"/>
                             <constraint firstItem="9Rf-z6-irb" firstAttribute="leading" secondItem="s0S-p6-4cc" secondAttribute="leading" constant="20" id="DO5-V2-Od4"/>
                             <constraint firstItem="Axs-Hc-fsb" firstAttribute="centerX" secondItem="9Rf-z6-irb" secondAttribute="centerX" id="Ef5-if-BC0"/>
                             <constraint firstItem="gcL-PF-c9H" firstAttribute="trailing" secondItem="s0S-p6-4cc" secondAttribute="trailingMargin" id="KWe-Z1-zse"/>
                             <constraint firstItem="gcL-PF-c9H" firstAttribute="leading" secondItem="s0S-p6-4cc" secondAttribute="leadingMargin" id="SV1-AQ-5ZI"/>
                             <constraint firstItem="O13-R5-Vwc" firstAttribute="top" secondItem="Axs-Hc-fsb" secondAttribute="bottom" constant="20" id="VOX-Yr-SjZ"/>
+                            <constraint firstItem="epH-ce-DfI" firstAttribute="top" secondItem="DL1-xB-KeJ" secondAttribute="bottom" constant="8" id="W4I-6B-uS8"/>
                             <constraint firstItem="Axs-Hc-fsb" firstAttribute="width" secondItem="9Rf-z6-irb" secondAttribute="width" id="WcU-Go-lFo"/>
                             <constraint firstItem="dvT-Dx-CGs" firstAttribute="leading" secondItem="s0S-p6-4cc" secondAttribute="leadingMargin" id="Zad-Qq-z1F"/>
                             <constraint firstAttribute="trailing" secondItem="Erg-3M-5C5" secondAttribute="trailing" constant="20" id="fnm-Oc-Sd8"/>
                             <constraint firstItem="dvT-Dx-CGs" firstAttribute="trailing" secondItem="s0S-p6-4cc" secondAttribute="trailingMargin" id="hye-6w-FAQ"/>
+                            <constraint firstItem="dvT-Dx-CGs" firstAttribute="top" secondItem="TIB-BF-ABJ" secondAttribute="bottom" constant="20" id="kOU-rA-Jh6"/>
                             <constraint firstItem="Mt0-5E-mqi" firstAttribute="leading" secondItem="s0S-p6-4cc" secondAttribute="leadingMargin" id="kVk-jp-m2V"/>
                             <constraint firstItem="Axs-Hc-fsb" firstAttribute="leading" secondItem="s0S-p6-4cc" secondAttribute="leading" constant="20" id="oNL-Ic-q4U"/>
                             <constraint firstItem="O13-R5-Vwc" firstAttribute="top" secondItem="9Rf-z6-irb" secondAttribute="bottom" constant="20" id="sXb-nW-j4F"/>
@@ -272,17 +276,18 @@
                                 </constraints>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="QjZ-5k-EoN">
-                                <rect key="frame" x="0.0" y="64" width="167" height="263"/>
+                                <rect key="frame" x="0.0" y="64" width="167" height="245"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="167" id="0yt-vE-B8W"/>
-                                    <constraint firstAttribute="height" constant="263" id="rI6-Bi-Kvw"/>
+                                    <constraint firstAttribute="height" constant="245" id="rI6-Bi-Kvw"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFS-Y6-9mV">
-                                <rect key="frame" x="20" y="335" width="560" height="245"/>
+                                <rect key="frame" x="20" y="317" width="300" height="245"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="245" id="Utk-L9-W5k"/>
-                                    <constraint firstAttribute="width" constant="560" id="ksv-2r-ljg"/>
+                                    <constraint firstAttribute="width" constant="300" id="ksv-2r-ljg"/>
                                 </constraints>
                                 <string key="text">The man-cub Mowgli flees the jungle after a threat from the tiger Shere Khan. Guided by Bagheera the panther and the bear Baloo, Mowgli embarks on a journey of self-discovery, though he also meets creatures who don't have his best interests at heart.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
@@ -292,17 +297,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="leading" secondItem="A9S-bL-uMc" secondAttribute="leadingMargin" id="2bh-Xo-Hnt"/>
-                            <constraint firstItem="QjZ-5k-EoN" firstAttribute="leading" secondItem="A9S-bL-uMc" secondAttribute="leadingMargin" constant="-20" id="6cc-t6-nyk"/>
-                            <constraint firstItem="ZsT-Pu-WAP" firstAttribute="top" secondItem="EFS-Y6-9mV" secondAttribute="bottom" priority="900" constant="37" id="8iD-O9-Eqz"/>
-                            <constraint firstItem="dUl-tA-t0h" firstAttribute="leading" secondItem="QjZ-5k-EoN" secondAttribute="trailing" constant="21" id="9DV-S8-4HC"/>
-                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="trailing" secondItem="A9S-bL-uMc" secondAttribute="trailingMargin" id="C8v-ui-ulX"/>
-                            <constraint firstItem="dUl-tA-t0h" firstAttribute="top" secondItem="xEO-TE-81z" secondAttribute="bottom" constant="14" id="LDp-J9-ojD"/>
-                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="top" secondItem="QjZ-5k-EoN" secondAttribute="bottom" constant="8" id="UXD-r4-hqw"/>
-                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="centerY" secondItem="QjZ-5k-EoN" secondAttribute="centerY" priority="900" constant="150" id="iEI-I9-6dX"/>
-                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="trailing" secondItem="A9S-bL-uMc" secondAttribute="trailingMargin" id="ucJ-lQ-I6B"/>
-                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="leading" secondItem="A9S-bL-uMc" secondAttribute="leadingMargin" id="ule-aO-uOL"/>
-                            <constraint firstItem="QjZ-5k-EoN" firstAttribute="top" secondItem="xEO-TE-81z" secondAttribute="bottom" id="zDK-e6-k6I"/>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="leading" secondItem="A9S-bL-uMc" secondAttribute="leadingMargin" identifier="5" id="2bh-Xo-Hnt"/>
+                            <constraint firstItem="QjZ-5k-EoN" firstAttribute="leading" secondItem="A9S-bL-uMc" secondAttribute="leadingMargin" constant="-20" identifier="1" id="6cc-t6-nyk"/>
+                            <constraint firstItem="ZsT-Pu-WAP" firstAttribute="top" secondItem="EFS-Y6-9mV" secondAttribute="bottom" priority="900" constant="37" identifier="11" id="8iD-O9-Eqz"/>
+                            <constraint firstItem="dUl-tA-t0h" firstAttribute="leading" secondItem="QjZ-5k-EoN" secondAttribute="trailing" constant="21" identifier="3" id="9DV-S8-4HC"/>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="trailing" secondItem="A9S-bL-uMc" secondAttribute="trailingMargin" priority="900" identifier="6" id="C8v-ui-ulX"/>
+                            <constraint firstItem="dUl-tA-t0h" firstAttribute="top" secondItem="xEO-TE-81z" secondAttribute="bottom" constant="14" identifier="4" id="LDp-J9-ojD"/>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="top" secondItem="QjZ-5k-EoN" secondAttribute="bottom" constant="8" identifier="7" id="UXD-r4-hqw"/>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="centerY" secondItem="QjZ-5k-EoN" secondAttribute="centerY" priority="900" constant="150" identifier="8" id="iEI-I9-6dX"/>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="trailing" secondItem="A9S-bL-uMc" secondAttribute="trailingMargin" priority="900" identifier="9" id="ucJ-lQ-I6B"/>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="leading" secondItem="A9S-bL-uMc" secondAttribute="leadingMargin" identifier="10" id="ule-aO-uOL"/>
+                            <constraint firstItem="QjZ-5k-EoN" firstAttribute="top" secondItem="xEO-TE-81z" secondAttribute="bottom" identifier="2" id="zDK-e6-k6I"/>
                         </constraints>
                     </view>
                     <connections>

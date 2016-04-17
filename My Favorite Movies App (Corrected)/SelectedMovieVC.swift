@@ -8,6 +8,14 @@
 
 import UIKit
 
+extension NSLayoutConstraint {
+    
+    override public var description: String {
+        let id = identifier ?? ""
+        return "id: \(id), constant: \(constant)" //you may print whatever you want here
+    }
+}
+
 class SelectedMovieVC: UIViewController {
     
     var currentMovie: Movie!
@@ -27,6 +35,8 @@ class SelectedMovieVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         movieImg.image = currentMovie.getMovieImg()
+        movieImg.layer.cornerRadius = 10.0
+        movieImg.clipsToBounds = true
         movieSynopsis.text = currentMovie.synopsis
         movieTitle.text = currentMovie.title
         movieDesc.text = currentMovie.movieDesc
@@ -37,6 +47,6 @@ class SelectedMovieVC: UIViewController {
     func getCurrentMovie(movie: Movie) {
         currentMovie = movie
     }
-    
+
     
 }
