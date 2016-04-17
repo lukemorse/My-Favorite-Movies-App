@@ -240,28 +240,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="dUl-tA-t0h">
-                                <rect key="frame" x="188" y="78" width="64" height="158"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="dUl-tA-t0h">
+                                <rect key="frame" x="188" y="78" width="130" height="200"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="6Hb-Y4-St1">
-                                        <rect key="frame" x="0.0" y="0.0" width="64" height="31"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="6Hb-Y4-St1">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="39"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="lkm-2S-HhD">
-                                        <rect key="frame" x="0.0" y="71" width="64" height="27"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="lkm-2S-HhD">
+                                        <rect key="frame" x="0.0" y="79" width="130" height="34"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xlR-by-onT">
-                                        <rect key="frame" x="0.0" y="138" width="64" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="xlR-by-onT">
+                                        <rect key="frame" x="0.0" y="153" width="130" height="47"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="foK-ko-ems"/>
+                                    <constraint firstAttribute="height" constant="200" id="qw1-l7-Ibd"/>
+                                </constraints>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="QjZ-5k-EoN">
                                 <rect key="frame" x="0.0" y="64" width="167" height="263"/>
@@ -270,8 +274,12 @@
                                     <constraint firstAttribute="height" constant="263" id="rI6-Bi-Kvw"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFS-Y6-9mV">
-                                <rect key="frame" x="20" y="335" width="560" height="228"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFS-Y6-9mV">
+                                <rect key="frame" x="20" y="335" width="560" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="245" id="Utk-L9-W5k"/>
+                                    <constraint firstAttribute="width" constant="560" id="ksv-2r-ljg"/>
+                                </constraints>
                                 <string key="text">The man-cub Mowgli flees the jungle after a threat from the tiger Shere Khan. Guided by Bagheera the panther and the bear Baloo, Mowgli embarks on a journey of self-discovery, though he also meets creatures who don't have his best interests at heart.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -282,10 +290,14 @@
                         <constraints>
                             <constraint firstItem="EFS-Y6-9mV" firstAttribute="leading" secondItem="A9S-bL-uMc" secondAttribute="leadingMargin" id="2bh-Xo-Hnt"/>
                             <constraint firstItem="QjZ-5k-EoN" firstAttribute="leading" secondItem="A9S-bL-uMc" secondAttribute="leadingMargin" constant="-20" id="6cc-t6-nyk"/>
+                            <constraint firstItem="ZsT-Pu-WAP" firstAttribute="top" secondItem="EFS-Y6-9mV" secondAttribute="bottom" priority="900" constant="37" id="8iD-O9-Eqz"/>
                             <constraint firstItem="dUl-tA-t0h" firstAttribute="leading" secondItem="QjZ-5k-EoN" secondAttribute="trailing" constant="21" id="9DV-S8-4HC"/>
                             <constraint firstItem="EFS-Y6-9mV" firstAttribute="trailing" secondItem="A9S-bL-uMc" secondAttribute="trailingMargin" id="C8v-ui-ulX"/>
+                            <constraint firstItem="dUl-tA-t0h" firstAttribute="top" secondItem="xEO-TE-81z" secondAttribute="bottom" constant="14" id="LDp-J9-ojD"/>
                             <constraint firstItem="EFS-Y6-9mV" firstAttribute="top" secondItem="QjZ-5k-EoN" secondAttribute="bottom" constant="8" id="UXD-r4-hqw"/>
-                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="centerY" secondItem="QjZ-5k-EoN" secondAttribute="centerY" constant="150" id="iEI-I9-6dX"/>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="centerY" secondItem="QjZ-5k-EoN" secondAttribute="centerY" priority="900" constant="150" id="iEI-I9-6dX"/>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="trailing" secondItem="A9S-bL-uMc" secondAttribute="trailingMargin" id="ucJ-lQ-I6B"/>
+                            <constraint firstItem="EFS-Y6-9mV" firstAttribute="leading" secondItem="A9S-bL-uMc" secondAttribute="leadingMargin" id="ule-aO-uOL"/>
                             <constraint firstItem="QjZ-5k-EoN" firstAttribute="top" secondItem="xEO-TE-81z" secondAttribute="bottom" id="zDK-e6-k6I"/>
                         </constraints>
                     </view>

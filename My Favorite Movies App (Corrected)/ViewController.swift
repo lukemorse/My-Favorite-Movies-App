@@ -50,6 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell") as? MovieCell {
             let movie = movies[indexPath.row]
             cell.configureCell(movie)
+            cell.backgroundView = UIImageView(image: UIImage(named: "background-2.jpg"))
             return cell
         } else {
             return MovieCell()
